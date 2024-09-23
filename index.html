@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assingment-5</title>
+    <!-- font aowasome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,53 +48,72 @@
   <body class="">
     <main class="lexend">
       <!-- donation crad -->
+      <section>
+        <!-- header start -->
+        <section class="flex justify-around bg-gray-50 py-4">
+          <button
+            class="text-center text-lg font-semibold bg-btn px-8 rounded-lg"
+            type="button"
+          >
+            Blog
+          </button>
+          <div class="hidden md:block my-auto">
+            <div class="flex gap-2 text-center">
+              <img
+                class="border border-dashed bg-white"
+                src="./assets/logo.png"
+                alt="Helpinh hand"
+              />
+              <p class="my-auto text-nowrap text-lg font-semibold">
+                Donate Bangladesh
+              </p>
+            </div>
+          </div>
+          <div class="hidden md:block my-auto">
+            <div class="flex gap-2 text-center">
+              <img
+                class="border border-dashed bg-white"
+                src="./assets/coin.png"
+                alt="Coin"
+              />
+              <p class="my-auto text-nowrap text-lg font-semibold">
+                <span id="main-balance">15000</span> BDT
+              </p>
+            </div>
+          </div>
+          <!--hide menu -->
+          <div class="dropdown dropdown-end md:hidden">
+            <div tabindex="0" role="button" class="btn m-1">
+              <i class="fa-solid fa-bars"></i>
+            </div>
 
-      <!-- header start -->
-      <section class="flex justify-around bg-gray-50 py-4">
-        <button
-          class="text-center text-lg font-semibold bg-btn px-8 rounded-lg"
-          type="button"
-        >
-          Blog
-        </button>
-        <div class="flex gap-2 text-center">
-          <img
-            class="border border-dashed bg-white"
-            src="./assets/logo.png"
-            alt="Helpinh hand"
-          />
-          <p class="my-auto text-nowrap text-lg font-semibold">
-            Donate Bangladesh
-          </p>
-        </div>
-        <div class="flex gap-2 text-center">
-          <img
-            class="border border-dashed bg-white"
-            src="./assets/coin.png"
-            alt="Coin"
-          />
-          <p class="my-auto text-nowrap text-lg font-semibold">
-            <span id="main-balance">5000</span> BDT
-          </p>
-        </div>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
+            >
+              <li><a>Item 1</a></li>
+              <li><a>Item 2</a></li>
+            </ul>
+          </div>
+        </section>
+        <!-- hearder End -->
+        <!-- 2 btn start -->
+        <section class="text-center py-12 space-x-5">
+          <button
+            id="btn-donation"
+            class="bg-btn border-2 text-center text-lg font-semibold px-8 py-3 rounded-lg"
+          >
+            Donation
+          </button>
+          <button
+            id="btn-history"
+            class="border-2 text-center text-lg font-semibold px-8 py-3 rounded-lg"
+          >
+            History
+          </button>
+        </section>
+        <!-- 2 btn End -->
       </section>
-      <!-- hearder End -->
-      <!-- 2 btn start -->
-      <section class="text-center py-12 space-x-5">
-        <button
-          id="btn-donation"
-          class="bg-btn border-2 text-center text-lg font-semibold px-8 py-3 rounded-lg"
-        >
-          Donation
-        </button>
-        <button
-          id="btn-history"
-          class="border-2 text-center text-lg font-semibold px-8 py-3 rounded-lg"
-        >
-          History
-        </button>
-      </section>
-      <!-- 2 btn End -->
       <!-- cards start -->
       <section id="cards" class="space-y-5 mb-7">
         <!-- card 1 -->
@@ -99,15 +126,15 @@
             alt="Bonna Noakhali Photo"
           />
 
-          <div>
-            <div class="flex gap-3 bg-gray-100 p-1 w-40 rounded-lg mb-4">
+          <div class="flex flex-col">
+            <div class="flex gap-3 bg-gray-100 p-1 w-40 rounded-lg mb-5">
               <img src="./assets/coin.png" alt="" />
               <p class="font-semibold"><span id="noakhali">3000</span> BDT</p>
             </div>
             <h3 class="text-lg font-semibold mb-2">
               Donate for Flood at Noakhali, Bangladesh
             </h3>
-            <p class="mb-2">
+            <p class="mb-4">
               The recent floods in Noakhali have caused significant damage to
               homes infrastructure. Your donation will help provide essential
               supplies and to those affected by this disaster. Every
@@ -117,7 +144,7 @@
             </p>
             <input
               id="crad-input1"
-              class="border-2 w-full p-2 rounded-lg mb-4"
+              class="border-2 w-full p-2 rounded-lg"
               type="number"
               placeholder="Write Donation Amount"
             />
@@ -129,7 +156,7 @@
               Donate Now
             </button>
             <!-- modal---1 -->
-            <dialog id="my_modal_1" class="modal text-center">
+            <dialog id="my_modal_1" class="modal text-center w-9/12 mx-auto">
               <div class="modal-box">
                 <h3 class="text-lg font-bold">Congraters!</h3>
                 <img class="p-4 mx-auto" src="./assets/coin.png" alt="" />
@@ -150,10 +177,10 @@
         >
           <img class="mb-5 lg:mb-0 mx-auto" src="./assets/feni.png" alt="" />
 
-          <div>
+          <div class="flex flex-col">
             <div class="flex gap-3 bg-gray-100 p-1 w-40 rounded-lg mb-4">
               <img src="./assets/coin.png" alt="" />
-              <p class="font-semibold">2000 BDT</p>
+              <p class="font-semibold"><span id="feni">2000</span> BDT</p>
             </div>
             <h3 class="text-lg font-semibold mb-2">
               Donate for Flood Relief in Feni,Bangladesh
@@ -169,12 +196,16 @@
               urgent need.
             </p>
             <input
-              class="border-2 w-full p-2 rounded-lg mb-4"
+              id="crad-input2"
+              class="border-2 w-full p-2 rounded-lg"
               type="number"
               placeholder="Write Donation Amount"
             />
             <br />
-            <button class="bg-btn w-full p-3 rounded-lg text-lg font-semibold">
+            <button
+              id="crad-2-btn"
+              class="bg-btn w-full p-3 rounded-lg text-lg font-semibold"
+            >
               Donate Now
             </button>
           </div>
@@ -189,10 +220,10 @@
             alt=""
           />
 
-          <div>
+          <div class="flex flex-col">
             <div class="flex gap-3 bg-gray-100 p-1 w-40 rounded-lg mb-4">
               <img src="./assets/coin.png" alt="" />
-              <p class="font-semibold">2500 BDT</p>
+              <p class="font-semibold"><span id="quota">4000</span> BDT</p>
             </div>
             <h3 class="text-lg font-semibold mb-2">
               Aid for Injured in the Quota Movement
@@ -209,12 +240,16 @@
               their time of need.
             </p>
             <input
-              class="border-2 w-full p-2 rounded-lg mb-4"
+              id="crad-input3"
+              class="border-2 w-full p-2 rounded-lg"
               type="number"
               placeholder="Write Donation Amount"
             />
             <br />
-            <button class="bg-btn w-full p-3 rounded-lg text-lg font-semibold">
+            <button
+              id="crad-3-btn"
+              class="bg-btn w-full p-3 rounded-lg text-lg font-semibold"
+            >
               Donate Now
             </button>
           </div>

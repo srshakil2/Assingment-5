@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog page</title>
+    <!-- font aowasome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind setup -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              btn: "#B4F461",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <main>
+      <section class="relative">
+        <section
+          class="flex justify-around p-5 sticky top-1 bg-amber-50 bg-opacity-95"
+        >
+          <button
+            class="text-center text-lg font-semibold bg-btn px-8 rounded-lg"
+            type="button"
+          >
+            Home
+          </button>
+          <div class="hidden md:block my-auto">
+            <div class="flex gap-2 text-center">
+              <img
+                class="border border-dashed bg-white"
+                src="./assets/logo.png"
+                alt="Helpinh hand"
+              />
+              <p class="my-auto text-nowrap text-lg font-semibold">
+                Donate Bangladesh
+              </p>
+            </div>
+          </div>
+          <div class="hidden md:block my-auto">
+            <div class="flex gap-2 text-center">
+              <img
+                class="border border-dashed bg-white"
+                src="./assets/coin.png"
+                alt="Coin"
+              />
+              <p class="my-auto text-nowrap text-lg font-semibold">15000 BDT</p>
+            </div>
+          </div>
+          <!--hide menu -->
+          <div class="dropdown dropdown-end md:hidden">
+            <div tabindex="0" role="button" class="btn m-1">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

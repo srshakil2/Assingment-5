@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog page</title>
+    <title>Blog Page</title>
     <!-- font aowasome cdn -->
     <link
       rel="stylesheet"
@@ -45,6 +45,7 @@
           class="flex justify-around p-5 sticky top-1 bg-amber-50 bg-opacity-95"
         >
           <button
+            id="home"
             class="text-center text-lg font-semibold bg-btn px-8 rounded-lg"
             type="button"
           >
@@ -80,6 +81,65 @@
           </div>
         </section>
       </section>
+      <section>
+        <div class="w-11/12 md:w-8/12 mx-auto mt-6 space-y-3">
+          <h2 class="text-2xl md:text-4xl font-bold p-4">
+            Important FAQ <i class="fa-solid fa-question"></i>
+          </h2>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+              What is the document object model (DOM) ?
+            </div>
+            <div class="collapse-content">
+              <p>
+                The Document Object Model (DOM) is a programming interface for
+                web documents.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">
+              How do you select an element from the DOM ?
+            </div>
+            <div class="collapse-content">
+              <p>
+                I can select elements from the DOM using various methods
+                getElementsByTagName,getElementById,getElementsByClassName,querySelector,querySelectorAll.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">
+              What is the event delegation in the context of the DOM, and why is
+              it useful ?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Event delegation is a technique in JavaScript for handling
+                events efficiently by leveraging the event bubbling mechanism in
+                the DOM.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">
+              How do you manipulate an element's attributes and style using the
+              DOM ?
+            </div>
+            <div class="collapse-content">
+              <p>
+                I can manipulate an element's attributes and styles using
+                various methods provided by the DOM API.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <script src="./blog.js"></script>
   </body>
 </html>

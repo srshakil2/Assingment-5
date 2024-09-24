@@ -147,3 +147,6 @@ document.getElementById("btn-donation").addEventListener("click", function () {
   const hide = document.getElementById("cards");
   hide.classList.remove("hidden");
 });
+document.querySelector("#blog").addEventListener("click", function () {
+  window.location.href = "./blog.html";
+});
